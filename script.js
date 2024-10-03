@@ -40,25 +40,19 @@ window.onscroll = function(){
     efectoHabilidades();
 } 
 
+//metodo para descargar
 function descargarPDF() {
-    // Reemplaza "ruta_del_archivo.pdf" con la ruta real de tu archivo PDF
-    var url = "CURRICULUM_VITAE_ELI.pdf";
-
+    var url = "PULIC_CURRICULUM_VITAE_ELI.pdf";
     // Crea un elemento de enlace temporal
     var link = document.createElement('a');
-
     // Configura la URL del enlace
     link.href = url;
-
     // Especifica que el enlace debe descargarse en lugar de navegar
-    link.download = "CURRICULUM_VITAE_ELI";
-
+    link.download = "PULIC_CURRICULUM_VITAE_ELI";
     // Agrega el enlace al documento HTML
     document.body.appendChild(link);
-
     // Simula un clic en el enlace para iniciar la descarga
     link.click();
-
     // Elimina el enlace del documento HTML
     document.body.removeChild(link);
 }
