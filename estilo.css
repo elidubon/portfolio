@@ -208,156 +208,93 @@ html{
 .sobremi button:hover .overlay{
     width: 100%;
 }
-/* SECCION S K I L L S */
+/********************************************/
+/* Estilos generales */
+/*SECCION S K I L L S*/ 
+.skills {
+    padding: 50px 20px;
+    background-color: #f7f7f7;
+}
+
+.skills h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2rem;
+    color:white;
+}
+
+.skills .fila {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.skills .col {
+    flex: 1;
+    min-width: 300px;
+    margin: 10px;
+    text-align: center;
+}
+
+.skills h3 {
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+    color: #555;
+}
+
+/* Estilos para los iconos */
+.icono-skill {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.icono-skill i {
+    font-size: 3rem;
+    color: #4caf50;
+    margin-bottom: 10px;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.icono-skill span {
+    font-size: 1rem;
+    color:white;
+    font-weight: bold;
+}
+
+.icono-skill i:hover {
+    transform: scale(1.2);
+    color: #388e3c;
+}
+
 .skills{
     background-color: #252A2E;
     color: #fff;
     padding: 50px 20px;
-}
-.skills .contenido-seccion{
-    max-width: 1100px;
-    margin: auto;
 }
 .skills h2{
     font-size: 48px;
     font-family: 'Righteous';
     text-align: center;
     padding: 20px 0;
-
 }
-.skills .fila{
-    display: flex;
+.skills .contenido-seccion{
+    max-width: 1100px;
+    margin: auto;
 }
 .skills .fila .col{
     width: 50%;
     padding: 0 20px;
 }
-.skills .fila .col h3{
-    font-size: 28px;
-    font-family: 'Righteous';
-    margin-bottom: 25px;
-}
 .skills .skill > span{
     font-weight: bold;
     display: block;
     margin-bottom: 10px;
+    color: white;
 }
-.skills .skill .barra-skill{
-    height: 8px;
-    width: 80%;
-    background-color: #131517;
-    position: relative;
-    margin-bottom: 30px;
-}
-.skills .skill .progreso{
-    background-color: #6f818e;
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 8px;
-}
-.skills .skill .barra-skill span{
-    position: absolute;
-    height: 40px;
-    width: 40px;
-    background-color: #6f818e;
-    border-radius: 50px;
-    line-height: 40px;
-    text-align: center;
-    top: -17px;
-    right: -15px;
-    font-size: 14px;
-}
-/* Estas clases se agregaran dinamicamente mediante javascript */
-.skills .skill .javascript{
-    width: 0%;
-    animation: 2s javascript forwards;
-}
-@keyframes javascript {
-    0%{width: 0%;}
-    100%{width: 50%;}
-}
-
-.skills .skill .htmlcss{
-    width: 0%;
-    animation: 2s htmlcss forwards;
-}
-@keyframes htmlcss {
-    0%{width: 0%;}
-    100%{width: 50%;}
-}
-
-.skills .skill .Angular{
-    width: 0%;
-    animation: 2s Angular forwards;
-}
-@keyframes Angular {
-    0%{width: 0%;}
-    100%{width: 50%;}
-}
-
-.skills .skill .springboot{
-    width: 0%;
-    animation: 2s springboot forwards;
-}
-@keyframes springboot {
-    0%{width: 0%;}
-    100%{width: 50%;}
-}
-
-.skills .skill .postgressq{
-    width: 0%;
-    animation: 2s postgressq forwards;
-}
-@keyframes postgressq {
-    0%{width: 0%;}
-    100%{width: 50%;}
-}
-
-.skills .skill .comunicacion{
-    width: 0%;
-    animation: 2s comunicacion forwards;
-}
-@keyframes comunicacion {
-    0%{width: 0%;}
-    100%{width: 99%;}
-}
-
-.skills .skill .trabajo{
-    width: 0%;
-    animation: 2s trabajo forwards;
-}
-@keyframes trabajo {
-    0%{width: 0%;}
-    100%{width: 97%;}
-}
-
-.skills .skill .creatividad{
-    width: 0%;
-    animation: 2s creatividad forwards;
-}
-@keyframes creatividad {
-    0%{width: 0%;}
-    100%{width: 90%;}
-}
-
-.skills .skill .dedicacion{
-    width: 0%;
-    animation: 2s dedicacion forwards;
-}
-@keyframes dedicacion {
-    0%{width: 0%;}
-    100%{width: 98%;}
-}
-
-.skills .skill .proyect{
-    width: 0%;
-    animation: 2s proyect forwards;
-}
-@keyframes proyect {
-    0%{width: 0%;}
-    100%{width: 95%;}
-}
+/*************************************/
 /* SECCION CURRICULUM */
 .curriculum{
     background-color: #1e2326;
