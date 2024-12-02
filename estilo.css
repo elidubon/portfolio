@@ -580,6 +580,51 @@ footer .arriba{
     line-height: 50px;
     font-size: 18px;
 }
+/****************/
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+form button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+form button:hover {
+    background-color: #0056b3;
+}
+
+form button .overlay {
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.2);
+    transition: left 0.3s;
+}
+
+form button:hover .overlay {
+    left: 0;
+}
+/*/***************/
 /* SECCION RESPONSIVE */
 @media screen and (max-width:980px){
     nav{

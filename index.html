@@ -297,15 +297,23 @@
                 <!-- Formulario -->
                 <div class="col">
                     <form action="https://formsubmit.co/rosaliodubon@gmail.com" method="POST">
-                    <input type="text" name="nombre" placeholder="Tú Nombre">
-                    <input type="text" name="cel" placeholder="Número telefónico">
-                    <input type="text" name="correo" placeholder="Dirección de correo">
-                    <input type="text" name="tema" placeholder="Tema">
-                    <textarea name="mmensaje" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
-                    <button>
-                        Enviar Mensaje<i class="fa-solid fa-paper-plane"></i>
-                        <span class="overlay"></span>
-                    </button>
+                        <!-- Campos del formulario -->
+                        <input type="text" name="nombre" placeholder="Tú Nombre" required>
+                        <input type="tel" name="cel" placeholder="Número telefónico" required>
+                        <input type="email" name="correo" placeholder="Dirección de correo" required>
+                        <input type="text" name="tema" placeholder="Tema" required>
+                        <textarea name="mensaje" cols="30" rows="10" placeholder="Mensaje" required></textarea>
+                        
+                        <!-- Campos ocultos para personalizar FormSubmit -->
+                        <input type="hidden" name="_next" value="https://tupagina.com/gracias.html"> <!-- Redirige tras el envío -->
+                        <input type="hidden" name="_captcha" value="false"> <!-- Desactiva CAPTCHA -->
+                        <input type="hidden" name="_subject" value="Nuevo mensaje de contacto"> <!-- Personaliza el asunto -->
+                    
+                        <!-- Botón de envío -->
+                        <button type="submit">
+                            Enviar Mensaje <i class="fa-solid fa-paper-plane"></i>
+                            <span class="overlay"></span>
+                        </button>
                     </form>
                 </div>
                 <!-- Mapa -->
